@@ -1,0 +1,22 @@
+<a
+  href="#"
+  class="list-group-item clearfix border border-primary rounded"
+  (click)="onSelected()"
+>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="list-group-item-heading">
+        <h4>{{ recipe.name }}</h4>
+      </div>
+      <p class="list-group-item-text">{{ recipe.description }}</p>
+    </div>
+    <div class="col-md-6">
+      <img
+        [src]="recipe.imagePath"
+        alt=""
+        class="img-responsive"
+        style="max-height:50px"
+      />
+    </div>
+  </div>
+</a>
